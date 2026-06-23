@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+/* Flowchart canvas styling */
+.flow-symbol-label {
+  font-size: 13px;
+  fill: #1f2937;
+  pointer-events: none;
+  user-select: none;
+}
+
+.flow-connector {
+  stroke: #64748b;
+  stroke-width: 1.6;
+  fill: none;
+}
+
+.flow-edge-label {
+  font-size: 11px;
+  fill: #475569;
+  font-weight: 600;
+}
+
+.insertion-dot {
+  cursor: pointer;
+  transition: r 80ms ease;
+}
+
+/* Console monospace */
+.console-mono {
+  font-family: 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
+  font-size: 13px;
+}
